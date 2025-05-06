@@ -1,1 +1,6 @@
 pandas
+re
+emoji==0.5.4
+regex==2017.4.5
+nltk
+spacy
