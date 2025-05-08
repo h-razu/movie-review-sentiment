@@ -43,4 +43,4 @@ import pickle
 with open(os.path.join(output_path, "tokenizer.pkl"), "wb") as f:
     pickle.dump(tokenizer, f)
 
-print("✅ Dataset tokenized and saved!")
+print("Dataset tokenized and saved!")

@@ -1,3 +1,4 @@
 scripts/*.csv
 scripts/split_data
-data/preprocessed/*.csv
+data/processed/*.csv
+scripts/models
