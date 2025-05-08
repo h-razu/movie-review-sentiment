@@ -2,7 +2,7 @@ pandas
 re
 emoji==0.5.4
 regex==2017.4.5
-nltk
+nltk==3.2.5
 seaborn
 scikit-learn==0.18
 keras==2.1.5
