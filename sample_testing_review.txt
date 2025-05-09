@@ -1,0 +1,19 @@
+===Sample texts to predict sentiment from rotten tomatoes website===
+
+sample_text_1 = "This movie was absolutely amazing and inspiring!"
+
+sample_text_2 = "It’s usually not a good sign when something comes with an asterisk attached, and that’s the case here."
+
+sample_text_3 = "Overall, Pugh carries the movie from start to finish, and I enjoyed viewing her performance--I wasn’t a fan of the mismatched script and kept waiting for an interesting storyline to follow."
+
+sample_text_4 = "Sherlock Holmes remains a strong calling card for Ritchie, as well as an under-appreciated chapter in the respective careers of its star-studded cast." #4/5
+
+sample_text_5 = "An entertaining update of the legendary detective that succeeds largely by the chemistry between Robert Downey Jr. and Jude Law."
+
+sample_text_6 = "This film seems like a cynical moneymaker, using a storied name to draw attention while not even trying to bring that beloved creation to life. Expect more of the same, though."# 2/5
+
+sample_text_7 = "Sinners' best moments shine when Coogler is able to weave his true intentions into this fucked up vampire fever dream. The music is incredible and Miles Caton gives one hell of a debut performance." # 8/10
+
+sample_text_8 = "A rare example of an original film that is also a crowd pleaser, it is another victory for one of the industry most industrious director-star duos" # 3/5
+
+sample_text_9 = "Sinners is a redemption movie, a revenge movie with elements of Blaxploitation, and certainly a red-blood-soaked horror movie; it is also deeply romantic and has the rhythms and audaciousness of some of our boldest musicals." # 4.5/5

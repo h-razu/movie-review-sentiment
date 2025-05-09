@@ -37,11 +37,14 @@ def text_processing(texts):
 
 
 # Predict function
-def predict_sentiment(texts):
-    processed = text_processing(texts)
-    predictions = model.predict(processed)
-    results = ["Positive" if p > 0.7 else "Negative" for p in predictions]
-    return zip(texts, results, predictions.flatten())
+def predict_sentiment(text):
+    processed = text_processing([text])
+    prediction = model.predict(processed)[0][0]  # Single float value
+    label = "Positive" if prediction > 0.6 else "Negative"
+    confidence = int(prediction * 100) if label == "Positive" else int((1 - prediction) * 100)
+
+    message = "I am {}% confident that this review is {}.".format(confidence, label.lower())
+    return message
 
 if __name__ == "__main__":
     sample_texts = [
@@ -51,7 +54,8 @@ if __name__ == "__main__":
         "Its Pugh who carries the film, making us care about her jaded world-weariness but always keeping it funny. Which is not to say that there is no other good acting in Thunderbolts.",
         "Thunderbolts succeeds in spite of Marvel’s built in hurdles and its uneven script. The film remembers that our love of superheroes doesn’t stem from what these overpowered beings can do but what these humans who become icons overcame to earn the title."
     ]
-    
-    outputs = predict_sentiment(sample_texts)
-    for text, label, score in outputs:
-        print("\nText: {}\nPredicted Sentiment: {} (Score: {:.4f})".format(text, label, score))
+
+    for text in sample_texts:
+        result = predict_sentiment(text)
+        print("\nText: {}\n{}".format(text, result))
+
